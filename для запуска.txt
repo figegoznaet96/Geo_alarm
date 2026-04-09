@@ -1,0 +1,12 @@
+cd "C:\Users\VECTOR\Desktop\Project Cursor\alarm_salair_trans"
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+
+$env:TELEGRAM_BOT_TOKEN = "8600449230:AAFO1JQCCe-JH2ayqSeqxYK9GX3wVXYzAYk"
+$env:TELEGRAM_CHAT_ID = "1093924638"
+$env:FRAMES_KML_PATH = "C:\Users\VECTOR\Downloads\Рамки_просушка_1.kml"
+$env:POLL_INTERVAL_SEC = "30"
+$env:ALERT_RADIUS_KM = "5"
+
+python monitor.py
